@@ -1,6 +1,6 @@
 # homebrew-formula-plugin
 
-## Build Status: [![CircleCI](https://circleci.com/gh/nikogura/javabrew.svg?style=svg)](https://circleci.com/gh/nikogura/homebrew-formula-plugin)
+## Build Status: [![CircleCI](https://circleci.com/gh/nikogura/homebrew-formula-plugin.svg?style=svg)](https://circleci.com/gh/nikogura/homebrew-formula-plugin)
 
 ## Purpose
 To provide an example of how I figured to build an executable jar and distribute it via homebrew so that it works just
