@@ -1,0 +1,21 @@
+delimiters "%", "%"
+
+formula (version, checksum, project, description, homepage, url, commandscript) ::= <<
+class %project% < Formula
+  desc "%description%"
+  homepage "%homepage%"
+  url "%url%"
+  sha256 "%checksum%"
+  version "%version%"
+
+  def install
+    share.install "%project%-%version%-jar-with-dependencies.jar"
+    bin.install "%commandscript%"
+
+    ohai "%project% Installed. Muahahahahahahahahahaha!"
+    ohai ""
+
+  end
+end
+
+>>
