@@ -1,6 +1,12 @@
 machine:
   java:
     version: oraclejdk8
+
 general:
   artifacts:
     - "target/*.jar"
+
+test:
+  post:
+    - mv target/*.jar $CIRCLE_ARTIFACTS
+
