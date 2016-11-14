@@ -52,9 +52,45 @@ public class HomebrewFormula extends AbstractMojo {
     private String template;
 
     /**
+     * Name of the project (First letter capitalized)
+     * @parameter
+     * @required
+     */
+    private String project;
+
+    /**
+     * Description of the project
+     * @parameter
+     * @required
+     */
+    private String description;
+
+    /**
+     * URL to the project's homepage
+     * @parameter
+     * @required
+     */
+    private String homepage;
+
+    /**
+     * URL to the project's source code
+     * @parameter
+     * @required
+     */
+    private String url;
+
+    /**
+     * name of the command script
+     * @parameter
+     * @required
+     */
+    private String commandscript;
+
+    /**
      *
      * @throws MojoExecutionException
      */
+
 
     public void execute() throws MojoExecutionException {
         String checksum = generateChecksum();
